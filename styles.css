@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+body{
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+
+}
+/*main * {
+    border: 1px solid red;
+}*/
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    
+    /*display: flex;
+    flex-direction: column;*/
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
+    margin-bottom: 30%;
+}
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+
+}
+
+section div{
+    background-color: #2a2634 ;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+}
+
+section h2 {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: -0.47px;
+}
+section p {
+    /*font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;*/
+    letter-spacing: -0.18px;
+    color: #A1A1AA
+
+}
+ul{
+   display: flex;
+   gap: 16px;
+   margin-top: 24px;
+   flex-wrap: wrap;
+}
+.Game-list img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+.Stremer-viwes img{
+    border-radius: 50%;
+    width: 70px;
+}
+/*#foto img {
+    margin-left: 45%;
+    border-radius: 50%;
+    margin-top: 20%;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-block: 6px;
+    padding-inline: 6px;
+   
+}*/
+header{
+    text-align: center;
+    padding-top: 32px;
+    height: calc(120px + 32px);
+
+}
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    transition: transform .3s;
+}
+header img {
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+
+
+}
+header div:hover{
+    transform: scale(1.1);
+}
+
+/*ul li:hover{
+    transform: scale(1.1);
+}*/
+section ul li{
+    transition: transform 0.3s;
+}
+
+section ul li:hover{
+    transform: scale(1.1);
+}
+
+
+/*animation*/
+header div {
+    animation: fromtop .7s 0.4s backwards;
+   /* animation-delay: 1s;*/
+
+
+}
+@keyframes fromtop {
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main section{
+    animation: frombottom .7s ba;
+
+}
+main section:nth-child(1){
+    animation-delay:  0s;
+}
+
+main section:nth-child(2){
+    animation-delay:  0.4s;
+}
+
+main section:nth-child(3){
+    animation-delay:  0.8s;
+}
+
+@keyframes frombottom {
+    from{
+        opacity: 0;
+        transform: translateY(32);
+    }
+
+    top{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
