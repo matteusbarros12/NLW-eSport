@@ -147,7 +147,7 @@ header div {
 }
 
 main section{
-    animation: frombottom .7s ba;
+    animation: frombottom .7s backwards;
 
 }
 main section:nth-child(1){
